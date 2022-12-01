@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociación Deportiva Cesur</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Calculadora de IMC--Índice de masa corporal-</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/reloj.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png" type="image/x-icon" sizes="16x16">
-    <script src="js/reloj.js"></script>
-    <script src="js/popup.js"></script>
-  
 </head>
 <body>
     <header>
@@ -46,23 +44,44 @@
             </div>
     </header>
 
-    <div class="pagprincipal">
-        <h1>Asociacion Deportiva Cesur</h1>
-        <p>Bienvenido a la pagina de la asociación deportiva Cesur Murcia,
-            en esta asociación podra encontrar información acerca de los horarios de los cuales disponemos de nuestras instalaciones,
-            ademas de hacer uso de aplicaciones referentes a su salud y rendimiento deportivo, podrá encontrar la categoria a la que usted pertenece
-            según su edad.
-        </p>
+
+   <div class="pagprincipal">
+    
+        <h1>Calculadora de IMC -Índice de masa corporal</h1>
+        <div class="input_area">
+            <h2> Altura en centimetros </h2>
+            <input id="cm" type="number">
+        </div>
+        <div class="input_area">
+            <h2> Peso en kg </h2>
+            <input id="kg" type="number">
+        </div>
+        <br>
+        <button class="bn29" onclick="calculateIMC()">Calcular</button>
+    </div>
+        <div class="pesos">
+    <ul>
+       <li id="infrapeso">&lt; 16.00: Infrapeso (delgadez severa)</li>
+       <li id="infrapeso2">16.00 –16.99: Infrapeso (delgadez moderada)</li>
+       <li id="infrapeso3">17.00 -18.49: Infrapeso (delgadez aceptable)</li>
+       <li id="normal">18.50 -24.99: Peso normal</li>
+       <li id="sobrepeso">25.00 -29.99: Sobrepeso</li>
+       <li id="obeso1">30.00 -34.99: Obeso (Tipo I)</li>
+       <li id="obeso2">35.00 -40.00: Obeso (Tipo II)</li>
+       <li id="obeso3">&gt; 40.00: Obeso (Tipo III)</li>
+    </ul>   
+    </div>
+   </div>
+      
+   <div class="footer">
+    <p>Asociación Deportiva Cesur</p>
+    <p>Web desarrollada por:<strong>Daniel Andryushchenko Vydysh y Denis Jean Gopanchuk</strong></p>
+    <p><a href="aviso.html">Aviso legal</a></p>
     </div>
 
-   
-        <div class="footer">
-        <p>Asociación Deportiva Cesur</p>
-        <p>Web desarrollada por:<strong>Daniel Andryushchenko Vydysh y Denis Jean Gopanchuk</strong></p>
-        <p><a href="aviso.html">Aviso legal</a></p>
-        </div>
-  
 
-
+       
+    </div>  
+    <script src="js/imc.js"></script>
 </body>
 </html>

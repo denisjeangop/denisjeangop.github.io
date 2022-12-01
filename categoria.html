@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociación Deportiva Cesur</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Calculadora de categoría</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/categoria.js"></script>
+    <script src="js/reloj.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png" type="image/x-icon" sizes="16x16">
-    <script src="js/reloj.js"></script>
-    <script src="js/popup.js"></script>
-  
 </head>
 <body>
     <header>
@@ -28,16 +27,16 @@
                     </ul>
                 </li>
                 <li>
-                   <li><a href="aviso.html">Aviso Legal</a></li> 
+                    <a href="aviso.html">Aviso Legal</a>
                 </li>
                 <li><a href="horario.html">Horario</a></li>
     
             </ul>
-    
         </nav>
         <div class="logo">
             <img src="img/logo-cesur.png">
         </div>
+    
 
             <div class="reloj">
             <div id="anio"></div>
@@ -45,24 +44,37 @@
             <div id="mes"></div>
             </div>
     </header>
-
-    <div class="pagprincipal">
-        <h1>Asociacion Deportiva Cesur</h1>
-        <p>Bienvenido a la pagina de la asociación deportiva Cesur Murcia,
-            en esta asociación podra encontrar información acerca de los horarios de los cuales disponemos de nuestras instalaciones,
-            ademas de hacer uso de aplicaciones referentes a su salud y rendimiento deportivo, podrá encontrar la categoria a la que usted pertenece
-            según su edad.
-        </p>
-    </div>
-
    
-        <div class="footer">
-        <p>Asociación Deportiva Cesur</p>
-        <p>Web desarrollada por:<strong>Daniel Andryushchenko Vydysh y Denis Jean Gopanchuk</strong></p>
-        <p><a href="aviso.html">Aviso legal</a></p>
+    <div class="container">
+        <h1>Encuentre su categoria</h1>
+        <div>
+        <div class="input_area">
+            <h2> Ingrese su año de nacimiento </h2>
+            <input id="age" type="number">
         </div>
-  
 
+        <br>
+        <button class="bn29" onclick="calculateOne()">Calcular</button>
+    </div>
+         <ul>
+            <li id="veterano">Categoria Veterano</li>
+            <li id="senior">Categoria Senior</li>
+            <li id="junior">Categoria Juveniles</li>
+            <li id="cadete">Categoria Cadete</li>
+            <li id="infanti">Categoria Infantil</li>
+            <li id="alevin">Categoria Alevin</li>
+            <li id="benjamin">Categoria Benjamin</li>
+            <li id="prebenjamin">Categoria Prebenjamin</li>
+         </ul>   
 
+        </div>
+
+        <div class="footer">
+            <p>Asociación Deportiva Cesur</p>
+            <p>Web desarrollada por:<strong>Daniel Andryushchenko Vydysh y Denis Jean Gopanchuk</strong></p>
+            <p><a href="aviso.html">Aviso legal</a></p>
+            </div>
+     
+   
 </body>
 </html>
